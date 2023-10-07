@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strdup - Duplicate a str in the heap memory
- * @s: type char pointer str
- * Return: Duplicated str
+ * _strdup - this duplicates a string in the heap memory
+ * @s: type character pointer string
+ * Return: Duplicated string
  */
 char *_strdup(const char *s)
 {
@@ -19,8 +19,8 @@ char *_strdup(const char *s)
 }
 
 /**
- * _strlen - Returns the lenght of a string
- * @s: type char pointer
+ * _strlen - it returns the lenght of a string
+ * @s: type character pointer
  * Return: Always 0.
  */
 int _strlen(const char *s)
@@ -34,7 +34,7 @@ int _strlen(const char *s)
 }
 
 /**
- * cmp_chars - compare chars of string
+ * cmp_chars - compares chars of string
  * @str: Input string
  * @delim: Delimiter
  *
@@ -61,9 +61,9 @@ int cmp_chars(char str[], const char *delim)
 }
 
 /**
- * _strtok - Split a string by some delimite
- * @str: Input string
- * @delim: Delimiter
+ * _strtok - it splits a string by some delimite
+ * @str: this is input string
+ * @delim: this is delimiter
  *
  * Return: String splited
  */
@@ -91,7 +91,7 @@ char *_strtok(char str[], const char *delim)
 		if (splitted != str_start)
 			if (*splitted && *(splitted - 1) == '\0')
 				break;
-		/*Replacing delimiter for null char*/
+		/*Replacing delimiter for null character*/
 		for (i = 0; delim[i]; i++)
 		{
 			if (*splitted == delim[i])
@@ -102,18 +102,18 @@ char *_strtok(char str[], const char *delim)
 				break;
 			}
 		}
-		if (bool == 0 && *splitted) /*Str != Delim*/
+		if (bool == 0 && *splitted) /*Str != Delimiter*/
 			bool = 1;
 	}
-	if (bool == 0) /*Str == Delim*/
+	if (bool == 0) /*String == Delimiter*/
 		return (NULL);
 	return (str_start);
 }
 
 /**
- * _isdigit - Defines if string passed is a number
+ * _isdigit - it defines if string passed is a number
  *
- * @s: Input string
+ * @s: this is input string
  * Return: 1 if string is a number. 0 in other case
  */
 int _isdigit(const char *s)
