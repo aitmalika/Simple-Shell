@@ -14,18 +14,18 @@
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
 
-/*Points to an array of pointers to strings called the "environment" */
+/*it points to an array of pointers to strings called the "environment" */
 extern char **environ;
 
 /**
- *struct data - this is struct that contains all relevant data on runtime
- *@av: argument vector
- *@input: command line written by the user
- *@args: tokens of the command line
- *@status: last status of the shell
- *@counter: lines counter
- *@_environ: environment variable
- *@pid: process ID of the shell
+ *struct data - it is struct that contains all relevant data on runtime
+ *@av: the argument vector
+ *@input: the command line written by the user
+ *@args: the tokens of the command line
+ *@status: the last status of the shell
+ *@counter: the lines counter
+ *@_environ: the environment variable
+ *@pid: the process ID of the shell
  */
 typedef struct data
 {
@@ -42,70 +42,71 @@ data_shell;
 
 /**
  *struct sep_list_s - single linked list
- *@separator: ; | &*@next: next node
- *Description: this is single linked list to store separators
+ *@separator: ; | &
+ *@next: next node
+ *Description: it is single linked list to store separators
  */
 typedef struct sep_list_s
 {
 	char separator;
-	struct sep_list_s * next;
+	struct sep_list_s *next;
 }
 
 sep_list;
 
 /**
  *struct line_list_s - single linked list
- *@line: command line
- *@next: next node
- *Description: single linked list to store command lines
+ *@line: the command line
+ *@next: the next node
+ *Description: the single linked list to store command lines
  */
 typedef struct line_list_s
 {
 	char *line;
-	struct line_list_s * next;
+	struct line_list_s *next;
 }
 
 line_list;
 
 /**
  *struct r_var_list - single linked list
- *@len_var: length of the variable
- *@val: this is value of the variable
- *@len_val: length of the value
- *@next: next node
- *Description: single linked list to store variables
+ *@len_var: the length of the variable
+ *@val: it is value of the variable
+ *@len_val: the length of the value
+ *@next: the next node
+ *Description: the single linked list to store variables
  */
 typedef struct r_var_list
 {
 	int len_var;
 	char *val;
 	int len_val;
-	struct r_var_list * next;
+	struct r_var_list *next;
 }
 
 r_var;
 
 /**
- *struct builtin_s - Builtin struct for command args.
- *@name: The name of the command builtin i.e cd, exit, env
- *@f: data type pointer function.
+ *struct builtin_s - the builtin struct for command args.
+ *@name: The nam of the command builtin i.e cd, exit, env
+ *@f: the data type pointer function.
  */
 typedef struct builtin_s
 {
 	char *name;
-	int(*f)(data_shell *datash);
+	int (*f)(data_shell *datash);
 }
 
 builtin_t;
 
 /*aux_lists.c */
-sep_list* add_sep_node_end(sep_list **head, char sep);
+sep_list *add_sep_node_end(sep_list **head, char sep);
 void free_sep_list(sep_list **head);
-line_list* add_line_node_end(line_list **head, char *line);
+line_list *add_line_node_end(line_list **head, char *line);
 void free_line_list(line_list **head);
 
 /*aux_lists2.c */
-r_var* add_rvar_node(r_var **head, int lvar, char *
+r_var *add_rvar_node(r_var **head, int lvar, char *
 	var, int lval);
 void free_rvar_list(r_var **head);
 

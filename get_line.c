@@ -3,11 +3,11 @@
 #include <unistd.h>
 
 /**
- *bring_line - this assigns the line var for get_line
- *@lineptr: Buffer that store the input str
- *@buffer: string that is been called to line
- *@n: size of line
- *@j: size of buffer
+ *bring_line - it assigns the line var for get_line
+ *@lineptr: the Buffer that store the input str
+ *@buffer: the string that is been called to line
+ *@n: the size of line
+ *@j: the size of buffer
  */
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 {
@@ -38,10 +38,10 @@ void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 }
 
 /**
- *get_line - This reads input from stream
- *@lineptr: this is buffer that stores the input
- *@n: size of lineptr
- *@stream: stream to read from
+ *get_line - it reads input from stream
+ *@lineptr: it is buffer that stores the input
+ *@n: the size of lineptr
+ *@stream: the stream to read from
  *Return: The number of bytes
  */
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream)

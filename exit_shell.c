@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *exit_shell - this exits the shell
+ *exit_shell - it exits the shell
  *
- *@datash: this is data relevant (status and args)
- *Return: this returns 0 on success.
+ *@datash: it is data relevant (status and args)
+ *Return: it returns 0 on success.
  */
 int exit_shell(data_shell *datash)
 {

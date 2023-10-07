@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *copy_info - this copies info to create
+ *copy_info - it copies info to create
  *a new env or alias
- *@name: name (env or alias)
- *@value: value (env or alias)
+ *@name: the name (env or alias)
+ *@value: the value (env or alias)
  *
- *Return: new env or alias.
+ *Return: the new env or alias.
  */
 char *copy_info(char *name, char *value)
 {
@@ -26,11 +26,11 @@ char *copy_info(char *name, char *value)
 }
 
 /**
- *set_env - this sets an environment variable
+ *set_env - it sets an environment variable
  *
- *@name: name of the environment variable
- *@value: value of the environment variable
- *@datash: data structure (environ)
+ *@name: the name of the environment variable
+ *@value: the value of the environment variable
+ *@datash: the data structure (environ)
  *Return: no return
  */
 void set_env(char *name, char *value, data_shell *datash)
@@ -59,9 +59,9 @@ void set_env(char *name, char *value, data_shell *datash)
 }
 
 /**
- *_setenv - this compares env variables names
+ *_setenv - it compares env variables names
  *with the name passed.
- *@datash: this is data relevant (env name and env value)
+ *@datash: it is data relevant (env name and env value)
  *
  *Return: 1 on success.
  */
@@ -79,9 +79,9 @@ int _setenv(data_shell *datash)
 }
 
 /**
- *_unsetenv - this deletes a environment variable
+ *_unsetenv - it deletes a environment variable
  *
- *@datash: this is data relevant (env name)
+ *@datash: it is data relevant (env name)
  *
  *Return: 1 on success.
  */
