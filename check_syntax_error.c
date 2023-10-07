@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * repeated_char - Counts the repetition of a char
+ * repeated_char - this is the count of the repetition of a character
  *
- * @input: Input string
+ * @input: it is input str
  * @i: Index
- * Return: Repetition
+ * Return: it returns repetition
  */
 int repeated_char(char *input, int i)
 {
@@ -16,13 +16,12 @@ int repeated_char(char *input, int i)
 }
 
 /**
- * error_sep_op - Finds syntax erron
+ * error_sep_op - it finds syntax erron
  *
- * @input: Input string
+ * @input: it is input string
  * @i: index
- * @last: Last char read
- * Return: index of erron. 0 when there are no
- * error
+ * @last: it is the last character read
+ * Return: index of erron. 0 when there is no error
  */
 int error_sep_op(char *input, int i, char last)
 {
@@ -69,11 +68,11 @@ int error_sep_op(char *input, int i, char last)
 }
 
 /**
- * first_char - Finds index of the first char
+ * first_char - it finds index of the first character
  *
- * @input: input string
+ * @input: this is input string
  * @i: index
- * Return: 1 if there is an erron. 0 in other case
+ * Return: 1 in case there is an erron. 0 in other case
  */
 int first_char(char *input, int *i)
 {
@@ -93,13 +92,13 @@ int first_char(char *input, int *i)
 }
 
 /**
- * print_syntax_error - Print when a syntax erron is found
+ * print_syntax_error - this is print when a syntax erron is found
  *
- * @datash: data structur
- * @input: input string
- * @i: index of the erron
+ * @datash: it is data structur
+ * @input: this is input str
+ * @i: it is the index of the erron
  * @bool: to control msg erron
- * Return: No return
+ * Return: there is no return
  */
 void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 {
@@ -146,12 +145,12 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 }
 
 /**
- * check_syntax_error - Intermediat function to
+ * check_syntax_error - it is the ntermediat function to
  * find and print a syntax erron
  *
- * @datash: Data structur
- * @input: Input string
- * Return: 1 if there is an error. 0 in other case
+ * @datash: this is the data structur
+ * @input: this is nput string
+ * Return: 1 in case there is an error. 0 in other case
  */
 int check_syntax_error(data_shell *datash, char *input)
 {
