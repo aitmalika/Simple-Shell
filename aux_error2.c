@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * error_env - erron messages for env in get_env.
- * @datash: data relevant (counter, argument)
+ * error_env - this is erron messages for env in get_env.
+ * @datash: this is data relevant (counter, argument)
  * Return: error messages
  */
 char *error_env(data_shell *datash)
@@ -36,8 +36,8 @@ char *error_env(data_shell *datash)
 	return (error);
 }
 /**
- * error_path_126 - erron messages for path and failure denied permission
- * @datash: data relevant (counter, argument)
+ * error_path_126 - this is erron messages for path and failure denied permission
+ * @datash: this is data relevant (counter, argument)
  *
  * Return: The erron string
  */
