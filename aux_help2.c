@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * aux_help - help information fon the builtin help
- * Return: No return
+ * aux_help - this is  help information fon the builtin help
+ * Return: there is no return
  */
 void aux_help(void)
 {
@@ -15,8 +15,8 @@ void aux_help(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_alias - help information for the builtin alias
- * Return: No return
+ * aux_help_alias - this is help information for the builtin alias
+ * Return: there is no return
  */
 void aux_help_alias(void)
 {
@@ -27,8 +27,8 @@ void aux_help_alias(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_cd - help information for the builtin alias
- * Return: No return
+ * aux_help_cd - this is help information for the builtin alias
+ * Return: there is no return
  */
 void aux_help_cd(void)
 {
