@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * cd_shell - Changes curront directry
+ * cd_shell - this is change in the curront directry
  *
- * @datash: Data relevant
+ * @datash: it is data relevant
  * Return: 1 On success
  */
 int cd_shell(data_shell *datash)
