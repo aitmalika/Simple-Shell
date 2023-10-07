@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - concatenat two string
- * @dest: char pointer the dest of the copied str
- * @src: const char pointer the source of str
- * Return: The dest
+ * _strcat - this concatenates two strings
+ * @dest: it is character pointer the dest of the copied str
+ * @src: it is const character pointer the source of string
+ * Return: The destination
  */
 char *_strcat(char *dest, const char *src)
 {
@@ -24,10 +24,10 @@ char *_strcat(char *dest, const char *src)
 	return (dest);
 }
 /**
- * *_strcpy - copies the string pointed to by src
- * @dest: type char pointer the dest of the copied str
- * @src: type char pointer the source of str
- * Return: The dest
+ * *_strcpy - it copies the string pointed to by src
+ * @dest: it is type character pointer the dest of the copied str
+ * @src: it is type character pointer the source of str
+ * Return: The destination
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -43,9 +43,9 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- * _strcmp - function that compare two string
- * @s1: Type str compared
- * @s2: Type str compared
+ * _strcmp - this is a function that compares two strings
+ * @s1: Type string compared
+ * @s2: Type string compared
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
@@ -62,9 +62,9 @@ int _strcmp(char *s1, char *s2)
 	return (0);
 }
 /**
- * _strchr - locate a character in a string
- * @s: String
- * @c: character
+ * _strchr - it locates a character in a string
+ * @s: this is string
+ * @c: this is character
  * Return: The pointer to the first occurrence of the character c
  */
 char *_strchr(char *s, char c)
@@ -79,9 +79,9 @@ char *_strchr(char *s, char c)
 	return ('\0');
 }
 /**
- * _strspn - get the length of a prefix substringe
- * @s: initial segment
- * @accept: Accepted bytes
+ * _strspn - this  gets the length of a prefix substringe
+ * @s: this is initial segment
+ * @accept: stands for accepted bytes
  * Return: The number of accepted bytes
  */
 int _strspn(char *s, char *accept)
