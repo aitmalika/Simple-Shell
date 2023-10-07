@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * add_sep_node_end - Adds a seprator found at the end
+ * add_sep_node_end - this adds a seprator found at the end
  * of a sep_list
- * @head: Head of the linked list
+ * @head: this is the head of the linked list
  * @sep: Seprator found (; | &)
  * Return: address of the head
  */
@@ -34,9 +34,9 @@ sep_list *add_sep_node_end(sep_list **head, char sep)
 }
 
 /**
- * free_sep_list - free a sep_list
- * @head: head of the linked list
- * Return: No return
+ * free_sep_list - it frees a sep_list
+ * @head: this is the head of the linked list
+ * Return: there is no return
  */
 void free_sep_list(sep_list **head)
 {
