@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * strcat_cd - Function that concatenate the message for cd error
+ * strcat_cd - It is a function that concatenate the message for cd error
  *
- * @datash: data relevant (directory)
+ * @datash: this is data relevant (directory)
  * @msg: messages to Print
  * @error: output messages
  * @ver_str: counter line
@@ -39,9 +39,9 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 }
 
 /**
- * error_get_cd - erron messages For cd command in get_cd
+ * error_get_cd - this is erron messages for cd command in get_cd
  * @datash: data relevant (directory)
- * Return: Error messages
+ * Return: It returns error messages
  */
 char *error_get_cd(data_shell *datash)
 {
@@ -110,7 +110,7 @@ char *error_not_found(data_shell *datash)
 }
 
 /**
- * error_exit_shell - generic erron messages for exit in get_exit
+ * error_exit_shell - this is generic erron messages for exit in get_exit
  * @datash: data relevant (counter, argument)
  *
  * Return: Erron messages
