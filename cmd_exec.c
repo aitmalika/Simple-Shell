@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * is_cdir - checks ":" if is in the current directry
- * @path: Type char pointer char
- * @i: Type int pointer of index
- * Return: 1 if the path is sear chable in the cd, 0 otherwise.
+ * is_cdir - checks ":" in case it is in the current directry
+ * @path: Type character pointer character
+ * @i: Type integer pointer of index
+ * Return: 1 in case the path is sear chable in the cd, 0 otherwise.
  */
 int is_cdir(char *path, int *i)
 {
@@ -23,11 +23,11 @@ int is_cdir(char *path, int *i)
 }
 
 /**
- * _which - Locates a command
+ * _which - it locates a command
  *
- * @cmd: Command name
- * @_environ: environement variable
- * Return: Location of the command
+ * @cmd: this is the command name
+ * @_environ: it is the environement variable
+ * Return: returns the location of the command
  */
 char *_which(char *cmd, char **_environ)
 {
@@ -73,10 +73,10 @@ char *_which(char *cmd, char **_environ)
 }
 
 /**
- * is_executable - determine if is an executable
+ * is_executable - this determines if is an executable
  *
- * @datash: data structur
- * Return: 0 if is not an executable, other number if it does
+ * @datash: this is data structur
+ * Return: 0 in case is not an executable, other number if it does
  */
 int is_executable(data_shell *datash)
 {
@@ -118,11 +118,11 @@ int is_executable(data_shell *datash)
 }
 
 /**
- * check_error_cmd - Verifies if user has permission to access
+ * check_error_cmd - it verifies if user has permission of access
  *
- * @dir: Destination directory
- * @datash: data structure
- * Return: 1 if there is an erron, 0 if not
+ * @dir: it is the destination directory
+ * @datash: this is  data structure
+ * Return: 1 in case there is an erron, 0 if not
  */
 int check_error_cmd(char *dir, data_shell *datash)
 {
@@ -155,9 +155,9 @@ int check_error_cmd(char *dir, data_shell *datash)
 }
 
 /**
- * cmd_exec - Executes command line
+ * cmd_exec - this executes the command line
  *
- * @datash: data relevant (args and input)
+ * @datash: this is data relevant (arguments and input)
  * Return: 1 On success
  */
 int cmd_exec(data_shell *datash)
